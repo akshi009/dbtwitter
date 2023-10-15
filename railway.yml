@@ -1,0 +1,10 @@
+version: 2
+services:
+  - name: web
+    type: nodejs
+    buildCommand: npm install
+    startCommand: npm run dev
+  - name: prisma
+    type: nodejs
+    buildCommand: npm install
+    startCommand: npx prisma generate && npx prisma migrate deploy
