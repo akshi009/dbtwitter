@@ -10,6 +10,11 @@ app.use(cors());
 const PORT = process.env.PORT || 3005;
 app.listen(PORT, () => console.log(`🚀 @ http://localhost:${PORT}`));
 
+
+app.get("/", (req, res) => {
+  res.send("Welcome to My App"); // Customize this response
+});
+
 app.get("/post", async (req, res) => {
   try {
     const posts = await prisma.post.findMany({
