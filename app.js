@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 
 const PORT = process.env.PORT || 3005;
-app.listen(PORT, () => console.log(`🚀 @ http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`🚀 @ https://dbtwitter.up.railway.app`));
 
 app.get("/post", async (req, res) => {
   try {
