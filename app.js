@@ -26,7 +26,7 @@ app.get("/users", async (req, res) => {
     }
   } catch (error) {
     console.error("Error:", error);
-    res.status(500).send("Internal Server Error");
+    res.status(500).send("Internal Server Eor");
   }
 });
 
@@ -39,7 +39,7 @@ app.post("/users", async (req, res) => {
     res.status(201).json(user);
   } catch (error) {
     console.error("Error:", error);
-    res.status(500).json({ error: "Internal Server Error" });
+    res.status(500).json({ error: "Internal Server Eor" });
   }
 });
 
